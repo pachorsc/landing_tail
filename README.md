@@ -1,3 +1,3 @@
-Fondo: https://www.tomorrowland.com/home/;
-estetica: https://grandleisure.org/;
-footer: https://savvycal.com/;
+Fondo: cambiar de color de fondo blur cada x timepo;
+
+estetica footer: que el navegador esté abajo en vez de arriba;
