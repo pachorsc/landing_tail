@@ -5,6 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-rosa">
+  <style type="text/tailwindcss">
+    .vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    }
+    @theme {
+      --animate-altura: altura 1s forwards; 
+      @keyframes altura {
+        100% {
+          height: 100%;
+        }
+      }
+
+      --animate-inicio: inicio 1.5s  forwards;
+      @keyframes inicio {
+        0% {
+          height: 100%;
+        }
+        100% {
+          height: 100px;
+        }
+      }
+
+      --animate-TU: TU 1.5s  ;
+      @keyframes TU {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: calc(1 / 4* 100%);
+        }
+      }
+
+      --animate-TITULO: TITULO 1.5s  ;
+      @keyframes TITULO {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: calc(2 / 4* 100%);
+        }
+      }
+
+      --animate-NOBILIARIO: NOBILIARIO 1.5s  forwards;
+      @keyframes NOBILIARIO {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    }
+  </style>
+
+  <body class="overflow-x-hidden">
+    <section class="w-dvw h-dvh  bg-[url(./img/image1.png)] bg-cover bg-[center_right_-152px]">
+      <div class="h-1/3 w-1/4 bg-[#C2C06F] font-bold flex justify-center items-center cursor-default animate-TU overflow-x-hidden">
+        <h1 class="text-7xl">TU</h1>
+      </div>
+      <div class="h-1/3 w-2/4 bg-[#A49C91] font-bold text-[#C2C06F] flex justify-center items-center cursor-default animate-TITULO overflow-x-hidden">
+        <h1 class="text-7xl">TITULO</h1>
+      </div>
+      <div class="h-1/3 w-4/4 bg-[#1F0F0A] font-bold text-[#A49C91] flex justify-center items-center cursor-default animate-NOBILIARIO overflow-x-hidden">
+        <h1 class="text-7xl">NOBILIARIO</h1>
+      </div>
+    </section>
+
+    <section class="w-dvw h-dvh bg-[url(./img/section2.png)] bg-cover bg-center flex items-end">
+      <div class="w-1/3 h-1/5 animate-inicio bg-[#9A7D4C] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
+        <p class="vertical text-7xl text-[#1E94B2] font-bold">CONDE</p>
+      </div>
+      <div class="w-1/3 h-1/5 animate-inicio bg-[#1E94B2] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
+        <p class="vertical text-7xl text-[#6F2E01] font-bold">DUQUE</p>
+      </div>
+      <div class="w-1/3 h-1/5 animate-inicio bg-[#6F2E01] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
+        <p class="vertical text-6xl text-[#806EEE] font-bold"><span class="text-7xl">M</span>ARQUÉS</p>
+      </div>
+      <div class="w-1/3 h-1/5 animate-inicio bg-[#806EEE] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
+        <p class="vertical text-7xl  font-bold">BARÓN</p>
+      </div>
+
+    </section>
+    <section class="w-dvw h-dvh bg-blue-400">
+
+    </section>
+
   </body>
 </html>
