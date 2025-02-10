@@ -11,14 +11,14 @@
     text-orientation: upright;
     }
     @theme {
-      --animate-altura: altura 1s forwards; 
+      --animate-altura: altura 0.5s forwards; 
       @keyframes altura {
         100% {
           height: 100%;
         }
       }
 
-      --animate-inicio: inicio 1.5s  forwards;
+      --animate-inicio: inicio 0.5s  ;
       @keyframes inicio {
         0% {
           height: 100%;
@@ -62,7 +62,7 @@
 
   <body class="overflow-x-hidden">
     
-    <section class="w-dvw h-dvh  bg-[url(./img/image1.png)] bg-cover bg-[center_right_-152px]">
+    <section class="w-dvw h-dvh  bg-[url(./img/image1.png)] bg-cover bg-[center_right_-152px] relative z-2">
       <div class="h-1/3 w-1/4 bg-[#C2C06F] font-bold flex justify-center items-center cursor-default animate-TU overflow-x-hidden">
         <h1 class="text-7xl">TU</h1>
       </div>
@@ -73,9 +73,15 @@
         <h1 class="text-7xl">NOBILIARIO</h1>
       </div>
     </section>
-    <nav class="sticky top-210 m-auto bg-[#D9D9D9] w-[90dvw] h-10 rounded-3xl z-2"></nav>
+    <nav class="sticky top-[90%] m-auto bg-[#D9D9D9] w-[90dvw] h-10 rounded-3xl z-1 flex justify-center items-center">
+      <a href="#">contacatanos</a>
+      <a class="w-30 hover:drop-shadow-xl mx-10" href="#">
+        <img class="w-100 mt-[-80px]" src="./img/logo.png">
+        <a href="#">productos</a>
+      </a>
+    </nav>
     
-    <section class="w-dvw h-dvh bg-[url(./img/section2.png)] bg-cover bg-center flex items-end">
+    <section class="w-dvw h-dvh bg-[url(./img/section2.png)] bg-cover bg-center flex items-end mt-[-40px]">
       <div class="w-1/3 h-1/5 animate-inicio bg-[#9A7D4C] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
         <p class="vertical text-7xl text-[#1E94B2] font-bold">CONDE</p>
       </div>
@@ -91,10 +97,10 @@
       
     </section>
     <section class="w-dvw bg-black flex flex-col justify-center items-center p-10">
-      <h1 class="text-center py-[50px] text-7xl text-white/90">¿Quieres formar parte de la nobleza?</h1>
-          <div class="bg-[url('https://rmrcultura.wordpress.com/wp-content/uploads/2022/02/l532-c2-prv-rar-002.jpg')] h-[440px] w-[310px]  bg-cover drop-shadow-[0_3px_75px_rgba(255,255,255,0.9)] my-[50px]"></div>
+      <h1 class="text-center py-[50px] text-5xl text-white/90">¿Quieres formar parte de la nobleza?</h1>
+          <div class="bg-[url('https://rmrcultura.wordpress.com/wp-content/uploads/2022/02/l532-c2-prv-rar-002.jpg')] h-[440px] w-[310px]  bg-cover drop-shadow-[0_3px_75px_rgba(255,255,255,0.9)] my-[50px] animate-pulse hover:animate-none"></div>
 
-        <p class="text-center w-85% md:w-[60%] sm:w-[70%] text-white/90 text-[2rem] pb-[60px]">
+        <p class="text-center w-85% md:w-[60%] sm:w-[70%] text-white/90 text-[1rem] pb-[60px]">
           Te ofrecemos la oportunidad de adquirir títulos nobiliarios con una rica herencia histórica. Conviértete en Señor o Barón y disfruta de los beneficios que otorgan estos prestigiosos rangos. No solo es una inversión en distinción, sino también una forma de conectarte con siglos de tradición y honor. Contáctanos y haz tuya una pieza exclusiva de la historia. ¡Tu lugar en la nobleza te espera!
         </p>
     </section>
