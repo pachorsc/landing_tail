@@ -1,13 +1,20 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  </head>
-  <style type="text/tailwindcss">
-    html {
+<html class="]">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<style type="text/tailwindcss">
+  html {
       scroll-behavior: smooth;
+    }
+    * {
+      cursor: url('./img/cursor.png'),auto;
+    }
+    input,button,a,img {
+      cursor: url('./img/cursor-focus.png'),auto;
     }
     .vertical {
     writing-mode: vertical-rl;
@@ -63,104 +70,178 @@
     }
   </style>
 
-  <body class="overflow-x-hidden ">
-    
-    <section class="w-dvw h-dvh  bg-[url(./img/image1.png)] bg-cover bg-[center_right_-152px] relative z-2">
-      <div class="h-1/3 w-1/4 bg-[#C2C06F] font-bold flex justify-center items-center cursor-default animate-TU overflow-x-hidden">
-        <h1 class="text-7xl">TU</h1>
-      </div>
-      <div class="h-1/3 w-2/4 bg-[#A49C91] font-bold text-[#C2C06F] flex justify-center items-center cursor-default animate-TITULO overflow-x-hidden">
-        <h1 class="text-7xl">TITULO</h1>
-      </div>
-      <div class="h-1/3 w-4/4 bg-[#1F0F0A] font-bold text-[#A49C91] flex justify-center items-center cursor-default animate-NOBILIARIO overflow-x-hidden">
-        <h1 class="text-7xl">NOBILIARIO</h1>
-      </div>
-    </section>
+<body class="overflow-x-hidden ">
 
-    <nav class="sticky top-[90%] m-auto bg-[#D9D9D9] w-[30dvw] h-10 rounded-3xl z-1 flex justify-center items-center">
-      <a href="#">contacatanos</a>
-      <a class="w-[120px] hover:drop-shadow-xl mx-20" href="#">
-        <img class="w-100 mt-[-80px]" src="./img/logo.png">
-        <a href="#prod">productos</a>
-      </a>
-    </nav>
-    
-    <section class="w-dvw h-[106dvh] bg-[url(./img/section2.png)] bg-cover bg-center flex items-end mt-[-40px]">
-      <div class="w-1/3 h-1/5 animate-inicio bg-[#9A7D4C] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
-        <p class="vertical text-7xl text-[#1E94B2] font-bold">CONDE</p>
-      </div>
-      <div class="w-1/3 h-1/5 animate-inicio bg-[#1E94B2] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
-        <p class="vertical text-7xl text-[#6F2E01] font-bold">DUQUE</p>
-      </div>
-      <div class="w-1/3 h-1/5 animate-inicio bg-[#6F2E01] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
-        <p class="vertical text-6xl text-[#806EEE] font-bold"><span class="text-7xl">M</span>ARQUÉS</p>
-      </div>
-      <div class="w-1/3 h-1/5 animate-inicio bg-[#806EEE] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
-        <p class="vertical text-7xl  font-bold">BARÓN</p>
-      </div>
-      
-    </section>
-    <section class="w-dvw h-dvh bg-black flex flex-col  justify-center items-center p-10">
-      
-      <h1 class="text-center py-[50px] text-5xl text-white/90 ">¿Quieres formar parte de la nobleza?</h1>
+  <section class="w-dvw h-dvh  bg-[url(./img/image1.png)] bg-cover bg-[center_right_-152px] relative z-2">
+    <div
+      class="h-1/3 w-1/4 bg-[#C2C06F] font-bold flex justify-center items-center cursor-default animate-TU overflow-x-hidden">
+      <h1 class="text-7xl">TU</h1>
+    </div>
+    <div
+      class="h-1/3 w-2/4 bg-[#A49C91] font-bold text-[#C2C06F] flex justify-center items-center cursor-default animate-TITULO overflow-x-hidden">
+      <h1 class="text-7xl">TITULO</h1>
+    </div>
+    <div
+      class="h-1/3 w-4/4 bg-[#1F0F0A] font-bold text-[#A49C91] flex justify-center items-center cursor-default animate-NOBILIARIO overflow-x-hidden">
+      <h1 class="text-7xl">NOBILIARIO</h1>
+    </div>
+  </section>
 
-          <div class="bg-[url('https://rmrcultura.wordpress.com/wp-content/uploads/2022/02/l532-c2-prv-rar-002.jpg')] h-[440px] w-[310px]  bg-cover drop-shadow-[0_3px_75px_rgba(255,255,255,0.9)] my-[50px] animate-pulse hover:animate-none"></div>
+  <nav class="sticky top-[90%] m-auto bg-[#D9D9D9] w-[400px] h-10 rounded-3xl z-1 flex justify-center items-center">
 
-        <p class="text-center w-85% md:w-[60%] sm:w-[70%] text-white/90 text-[1rem] pb-[60px]">
-          Te ofrecemos la oportunidad de adquirir títulos nobiliarios con una rica herencia histórica. Conviértete en Señor o Barón y disfruta de los beneficios que otorgan estos prestigiosos rangos. No solo es una inversión en distinción, sino también una forma de conectarte con siglos de tradición y honor. Contáctanos y haz tuya una pieza exclusiva de la historia. ¡Tu lugar en la nobleza te espera!
-        </p>
-    </section>
+    <a href="#">contacatanos</a>
 
-    <section id="prod" class="bg-[url('https://images.unsplash.com/photo-1512510002561-b32d0f7dcab5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGFpc2FqZSUyMGRlbCUyMGNhc3RpbGxvfGVufDB8fDB8fHww')] bg-cover bg-center bg-fixed">
+    <a class="cursor-[url('./img/cursor-focus.png'),auto;] w-[120px] hover:drop-shadow-xl mx-[10%] " href="#">
+      <img class="w-100 mt-[-80px]" src="./img/logo.png">
+    </a>
+    <a  href="#prod" >productos</a>
+  </nav>
 
-        <h1 class="text-center py-[50px] text-7xl font-bold">Productos</h1>
+  <section class="w-dvw h-[106dvh] bg-[url(./img/section2.png)] bg-cover bg-center flex items-end mt-[-40px]">
+    <div
+      class="w-1/3 h-1/5 animate-inicio bg-[#9A7D4C] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
+      <p class="vertical text-7xl text-[#1E94B2] font-bold">CONDE</p>
+    </div>
+    <div
+      class="w-1/3 h-1/5 animate-inicio bg-[#1E94B2] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
+      <p class="vertical text-7xl text-[#6F2E01] font-bold">DUQUE</p>
+    </div>
+    <div
+      class="w-1/3 h-1/5 animate-inicio bg-[#6F2E01] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
+      <p class="vertical text-6xl text-[#806EEE] font-bold"><span class="text-7xl">M</span>ARQUÉS</p>
+    </div>
+    <div
+      class="w-1/3 h-1/5 animate-inicio bg-[#806EEE] hover:animate-altura flex justify-center overflow-y-hidden cursor-default">
+      <p class="vertical text-7xl  font-bold">BARÓN</p>
+    </div>
 
-            <div class="w-dvw min-h-dvh flex flex-wrap gap-[40px] justify-center items-center">
-              <div class="w-100 h-100 box-shadow-[0_4px_20px_rgba(0, 0, 0, 0.2)] rounded-[28px]-28 duration-550 ease-[cubic-bezier(0.1, 0.22, 0.8, 1.13)] transform-3d hover:transform-[rotateY(-180deg)]">
-                  <div class=" absolute w-100 h-100 bg-[url('https://www.heraldrysinstitute.com/stemmi_nobiliari2022/img/36766/idc/36766/lang/es/Duque.png')] rounded-[28px] backface-hidden bg-center bg-no-repeat bg-cover">
-                  </div>
-                  <div class="w-100 h-100 text-[1.25rem] backface-hidden text-center grid place-items-center p-[32px] bg-[#B1CFC8] transform-[rotateY(180deg)] rounded-[28px] cursor-default">
-                    <h2 class="text-3xl">Duque</h2>
-                    <p>Ser <strong>duque</strong> de Pacholand es el título nobiliario más alto, simbolizando poder, prestigio y gran influencia. Este título exclusivo ofrece un reconocimiento excepcional, posicionándote en la élite de la nobleza y otorgándote acceso a los círculos más selectos y distinguidos.</p>
-                  </div>
-              </div>
+  </section>
+  <section class="w-dvw min-h-[100dvh] bg-[#111111] flex flex-col  justify-center items-center p-10">
 
-              
-              
-              
-              
-              <div class="w-100 h-100 box-shadow-[0_4px_20px_rgba(0, 0, 0, 0.2)] rounded-[28px]-28 duration-550 ease-[cubic-bezier(0.1, 0.22, 0.8, 1.13)] transform-3d hover:transform-[rotateY(-180deg)]">
-                <div class=" absolute w-100 h-100 bg-[url('https://www.heraldrysinstitute.com/stemmi_nobiliari2022/webp/1/img/40834/idc/602136/lang/es/Escudo+de+la+familia+Marques.webp')] rounded-[28px] backface-hidden bg-center bg-no-repeat bg-cover">
-                </div>
-                <div class="w-100 h-100 text-[1.25rem] backface-hidden text-center grid place-items-center p-[32px] bg-[#B1CFC8] transform-[rotateY(180deg)] rounded-[28px] cursor-default">
-                  <h2 class="text-3xl">Marqués</h2>
-                  <p>Ser <strong>marqués</strong> de Pacholand significa ostentar un título nobiliario de gran relevancia, superior al de conde. Con un estatus prestigioso, ofrece distinción y respeto, abriendo puertas a círculos sociales selectos y siendo una valiosa inversión de alto rango.</p>
-                </div>
-              </div>
-              
-              <div class="w-100 h-100 box-shadow-[0_4px_20px_rgba(0, 0, 0, 0.2)] rounded-[28px]-28 duration-550 ease-[cubic-bezier(0.1, 0.22, 0.8, 1.13)] transform-3d hover:transform-[rotateY(-180deg)]">
-                <div class=" absolute w-100 h-100 bg-[url('https://www.heraldrysinstitute.com/stemmi_nobiliari_miniature2022/webp/1/idt/36698/1669032871/Escudo+de+la+familia/Conde.webp')] rounded-[28px] backface-hidden bg-center bg-no-repeat bg-cover">
-                </div>
-                <div class="w-100 h-100 text-[1.25rem] backface-hidden text-center grid place-items-center p-[32px] bg-[#B1CFC8] transform-[rotateY(180deg)] rounded-[28px] cursor-default">
-                  <h2 class="text-3xl">Conde</h2>
-                  <p>Ser <strong>conde</strong> de Pacholand implica poseer un título nobiliario de alto rango, que otorga prestigio y respeto. Este título, por encima del barón pero por debajo del marqués, ofrece acceso a círculos sociales exclusivos y es una valiosa inversión en estatus.</p>
-                </div>
-            </div>
+    <h1 class="text-center py-[50px] text-5xl text-white/90 ">¿Quieres formar parte de la nobleza?</h1>
 
-        <div class="w-100 h-100 box-shadow-[0_4px_20px_rgba(0, 0, 0, 0.2)] rounded-[28px]-28 duration-550 ease-[cubic-bezier(0.1, 0.22, 0.8, 1.13)] transform-3d hover:transform-[rotateY(-180deg)]">
-          <div class=" absolute w-100 h-100 bg-[url('https://www.heraldrysinstitute.com/stemmi_nobiliari2022/img/36444/idc/36444/lang/en/Bar%C3%B3n.png')] rounded-[28px] backface-hidden bg-center bg-no-repeat bg-cover">
-          </div>
-          <div class="w-100 h-100 text-[1.25rem] backface-hidden text-center grid place-items-center p-[32px] bg-[#B1CFC8] transform-[rotateY(180deg)] rounded-[28px] cursor-default">
-            <h2 class="text-3xl">Barón</h2>
-            <p>Ser <strong>barón</strong> de Pacholand significa poseer un título nobiliario, aunque es el más bajo en la jerarquía de la nobleza. A pesar de esto, otorga un toque de distinción y acceso a círculos exclusivos, siendo una inversión en tradición y prestigio.</p>
-          </div>
-      </div>
+    <div
+      class="bg-[url('https://rmrcultura.wordpress.com/wp-content/uploads/2022/02/l532-c2-prv-rar-002.jpg')] h-[440px] w-[310px]  bg-cover drop-shadow-[0_3px_75px_rgba(255,255,255,0.9)] my-[50px] animate-pulse hover:animate-none">
+    </div>
 
+    <p class="text-center w-85% md:w-[60%] sm:w-[70%] text-white/90 text-[1.25rem] pb-[60px]">
+      Te ofrecemos la oportunidad de adquirir títulos nobiliarios con una rica herencia histórica. Conviértete en Señor
+      o Barón y disfruta de los beneficios que otorgan estos prestigiosos rangos. No solo es una inversión en
+      distinción, sino también una forma de conectarte con siglos de tradición y honor. Contáctanos y haz tuya una pieza
+      exclusiva de la historia. ¡Tu lugar en la nobleza te espera!
+    </p>
+  </section>
+
+  <section id="prod"
+    class="bg-[url('https://images.unsplash.com/photo-1512510002561-b32d0f7dcab5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGFpc2FqZSUyMGRlbCUyMGNhc3RpbGxvfGVufDB8fDB8fHww')] bg-cover bg-center bg-fixed">
+
+    <h1 class="text-center py-[50px] text-7xl font-bold">Productos</h1>
+
+    <div class="w-dvw min-h-dvh flex flex-wrap gap-[40px] justify-center items-center">
+
+      <div
+        class="w-100 h-100 box-shadow-[0_4px_20px_rgba(0, 0, 0, 0.2)] rounded-[28px]-28 duration-550 ease-[cubic-bezier(0.1, 0.22, 0.8, 1.13)] transform-3d hover:transform-[rotateY(-180deg)]">
+        <div
+          class=" absolute w-100 h-100 bg-[url('https://www.heraldrysinstitute.com/stemmi_nobiliari2022/img/36766/idc/36766/lang/es/Duque.png')] rounded-[28px] backface-hidden bg-center bg-no-repeat bg-cover">
         </div>
-      
-            
-                
-   
-    </section>    
-  </body>
+        <div
+          class="w-100 h-100 text-[1.25rem] backface-hidden text-center grid place-items-center p-[32px] bg-[#B1CFC8] transform-[rotateY(180deg)] rounded-[28px] cursor-default">
+          <h2 class="text-3xl">Duque</h2>
+          <p>Ser <strong>duque</strong> de Pacholand es el título nobiliario más alto, simbolizando poder, prestigio y
+            gran influencia. Este título exclusivo ofrece un reconocimiento excepcional, posicionándote en la élite de
+            la nobleza y otorgándote acceso a los círculos más selectos y distinguidos.</p>
+        </div>
+      </div>
+
+
+
+
+
+      <div
+        class="w-100 h-100 box-shadow-[0_4px_20px_rgba(0, 0, 0, 0.2)] rounded-[28px]-28 duration-550 ease-[cubic-bezier(0.1, 0.22, 0.8, 1.13)] transform-3d hover:transform-[rotateY(-180deg)]">
+        <div
+          class=" absolute w-100 h-100 bg-[url('https://www.heraldrysinstitute.com/stemmi_nobiliari2022/webp/1/img/40834/idc/602136/lang/es/Escudo+de+la+familia+Marques.webp')] rounded-[28px] backface-hidden bg-center bg-no-repeat bg-cover">
+        </div>
+        <div
+          class="w-100 h-100 text-[1.25rem] backface-hidden text-center grid place-items-center p-[32px] bg-[#B1CFC8] transform-[rotateY(180deg)] rounded-[28px] cursor-default">
+          <h2 class="text-3xl">Marqués</h2>
+          <p>Ser <strong>marqués</strong> de Pacholand significa ostentar un título nobiliario de gran relevancia,
+            superior al de conde. Con un estatus prestigioso, ofrece distinción y respeto, abriendo puertas a círculos
+            sociales selectos y siendo una valiosa inversión de alto rango.</p>
+        </div>
+      </div>
+
+      <div
+        class="w-100 h-100 box-shadow-[0_4px_20px_rgba(0, 0, 0, 0.2)] rounded-[28px]-28 duration-550 ease-[cubic-bezier(0.1, 0.22, 0.8, 1.13)] transform-3d hover:transform-[rotateY(-180deg)]">
+        <div
+          class=" absolute w-100 h-100 bg-[url('https://www.heraldrysinstitute.com/stemmi_nobiliari_miniature2022/webp/1/idt/36698/1669032871/Escudo+de+la+familia/Conde.webp')] rounded-[28px] backface-hidden bg-center bg-no-repeat bg-cover">
+        </div>
+        <div
+          class="w-100 h-100 text-[1.25rem] backface-hidden text-center grid place-items-center p-[32px] bg-[#B1CFC8] transform-[rotateY(180deg)] rounded-[28px] cursor-default">
+          <h2 class="text-3xl">Conde</h2>
+          <p>Ser <strong>conde</strong> de Pacholand implica poseer un título nobiliario de alto rango, que otorga
+            prestigio y respeto. Este título, por encima del barón pero por debajo del marqués, ofrece acceso a círculos
+            sociales exclusivos y es una valiosa inversión en estatus.</p>
+        </div>
+      </div>
+
+      <div
+        class="w-100 h-100 box-shadow-[0_4px_20px_rgba(0, 0, 0, 0.2)] rounded-[28px]-28 duration-550 ease-[cubic-bezier(0.1, 0.22, 0.8, 1.13)] transform-3d hover:transform-[rotateY(-180deg)]">
+        <div
+          class=" absolute w-100 h-100 bg-[url('https://www.heraldrysinstitute.com/stemmi_nobiliari2022/img/36444/idc/36444/lang/en/Bar%C3%B3n.png')] rounded-[28px] backface-hidden bg-center bg-no-repeat bg-cover">
+        </div>
+        <div
+          class="w-100 h-100 text-[1.25rem] backface-hidden text-center grid place-items-center p-[32px] bg-[#B1CFC8] transform-[rotateY(180deg)] rounded-[28px] cursor-default">
+          <h2 class="text-3xl">Barón</h2>
+          <p>Ser <strong>barón</strong> de Pacholand significa poseer un título nobiliario, aunque es el más bajo en la
+            jerarquía de la nobleza. A pesar de esto, otorga un toque de distinción y acceso a círculos exclusivos,
+            siendo una inversión en tradición y prestigio.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="h-dvh w-dvw bg-[url('./img/Las-Lajas-1.png')] bg-cover bg-center-top">
+
+    <div id="form" class="h-screen flex justify-center items-center">
+      <form class="bg-white flex flex-wrap py-5 px-8 rounded-lg shadow-lg max-[765px]:flex-col" action="">
+        <div class="flex justify-end items-center">
+        <label class="text-gray-700 font-bold py-2" for="">Nombre</label>
+        <input class="text-gray-700 shadow border rounded border-gray-300 focus:outline-none focus:shadow-outline  p-3 m-3" type="text" placeholder="Nombre">
+        </div>
+        <div class="flex justify-end items-center">
+          <label class="text-gray-700 font-bold py-2" for="">Correo</label>
+        <input class="text-gray-700 shadow border rounded border-gray-300 m-3  p-3 focus:outline-none focus:shadow-outline" type="password" placeholder="correo@gmail.com">
+        </div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded p-3 m-4 max-[765px]:self-center">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="relative z-3">
+    <div class=" bg-[#111111]">
+      <div class="max-w-2xl mx-auto text-white py-10">
+          <div class=" text-center flex gap-5 flex-col justify-center items-center">
+              <h3 class="text-3xl mb-3"> Pacho-land </h3>
+              <p>Obten el titulo que siempre haz soñado</p>
+              <div class="bg-[url('./img/logo.png')] bg-cover h-[120px] w-[120px] ">
+
+              </div>
+          </div>
+          <div class="mt-4 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+              <p class="order-2 md:order-1 mt-8 md:mt-0"> © Beautiful Footer, 2021. </p>
+              <div class="order-1 md:order-2">
+                  <a href="#form" class="px-2">Contactanos</a>
+                  <a class="px-2 border-l">inicio</a>
+                  <a href="#prod" class="px-2 border-l">Productos</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </footer>
+</body>
+
 </html>
